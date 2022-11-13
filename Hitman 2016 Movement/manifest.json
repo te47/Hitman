@@ -1,0 +1,226 @@
+{
+	"version": "1.29.0",
+	"updateCheck": "https://github.com/te47/Hitman/blob/main/Hitman2016Movement.json",
+	"id": "te47.Hitman2016Movement",
+	"name": "Hitman 2016 Movement",
+	"description": "Replaces 47's animations to recreate Hitman 2016.",
+	"authors": [
+		"te47"
+	],
+	"frameworkVersion": "2.0.0",
+	"options": [
+		{
+			"group": "Door Unlocks",
+			"name": "Hitman 2016",
+			"tooltip": "Hitman 2016 lockpick, key, crowbar, and keycard animations (standing only). Unlocked doors will not open automatically.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_doors_2016"
+			]
+		},
+		{
+			"group": "Door Unlocks",
+			"name": "Hitman 2016 (Hybrid)",
+			"tooltip": "Hitman 2016 standing unlock animations, Hitman 2 and 3 crouching unlock animations. Unlocked doors will not open automatically.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_doors_hybrid"
+			]
+		},
+		{
+			"group": "Door Unlocks",
+			"name": "Hitman 2 + Hitman 3",
+			"tooltip": "Hitman 2 and 3 lockpick, key, crowbar, and keycard animations (standing and crouching). Unlocked doors will open automatically.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_doors_vanilla"
+			]
+		},
+		{
+			"group": "Acrobatics/Briefcases",
+			"name": "Hitman 2016 (Default)",
+			"tooltip": "Most animations are extracted directly from Hitman 2016 (except for a few fixes/updates). The 2016 animations were created before briefcases were introduced in Hitman 2, resulting in visual issues. Aside from briefcases, this option has the best animation quality, transitions, and consistency.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_2016_default"
+			]
+		},
+		{
+			"group": "Acrobatics/Briefcases",
+			"name": "Hitman 2016 (Classic)",
+			"tooltip": "All animations are updated for briefcase support, except for the few with no identical replacements. This applies to climbing up 2 meters and certain animations that end with 47 standing (which allows crouching to be seamlessly cancelled).",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_2016_classic"
+			]
+		},
+		{
+			"group": "Acrobatics/Briefcases",
+			"name": "Hitman 2016 (Modern)",
+			"tooltip": "All animations are updated for briefcase support. Animations end with 47 standing or crouching depending on Hitman 3's selections. Climbing up 2 meters is slightly faster than in Hitman 2016, but the animations are otherwise unchanged.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_2016_modern"
+			]
+		},
+		{
+			"group": "Acrobatics/Briefcases",
+			"name": "Hitman 2016 (Original)",
+			"tooltip": "All animations are extracted directly from Hitman 2016 (except for a few fixes/updates). The 2016 animations were created before briefcases were introduced in Hitman 2, resulting in visual issues. Aside from briefcases, this option has the best animation quality, transitions, and consistency.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_2016_original"
+			]
+		},
+		{
+			"group": "Cover System",
+			"name": "Hitman 2016",
+			"tooltip": "Hitman 2016 base cover animations, Hitman 2016 (pistol) and Hitman 2 arm poses. Pistol arm angles are slightly off, but this option has no side effects.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_cover_2016"
+			]
+		},
+		{
+			"group": "Cover System",
+			"name": "Hitman 2016 (Original)",
+			"tooltip": "*CAUSES VISUAL ISSUES* Hitman 2016 base cover animations, Hitman 2016 (pistol) and Hitman 2 arm poses. Pistol arm angles are authentic, but this option causes visual issues with certain animations for carrying large items.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_cover_2016_original"
+			]
+		},
+		{
+			"group": "Cover System",
+			"name": "Hitman 2",
+			"tooltip": "Hitman 2016 base cover animations, Hitman 2 arm poses. Used in older versions of the mod.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_cover_hitman2"
+			]
+		},
+		{
+			"group": "Cover System",
+			"name": "Hitman 3",
+			"tooltip": "Hitman 3 cover animations (with 2016 acrobatics).",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_cover_hitman3"
+			]
+		},
+		{
+			"group": "Cover System",
+			"name": "Hitman 3 (Hybrid)",
+			"tooltip": "Hitman 3 cover animations (with 2016 acrobatics), combined with Hitman 2016 standing pistol arm poses. 2016 pistol arm angles are slightly off, but this option has no side effects.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_cover_hitman3_hybrid"
+			]
+		},
+		{
+			"group": "Equip/Unequip",
+			"name": "Hitman 2016",
+			"tooltip": "Hitman 2016 animations for equipping and unequipping weapons/items. All 2016 animations that meet high enough standards of quality are in use.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_inventory_2016"
+			]
+		},
+		{
+			"group": "Equip/Unequip",
+			"name": "Hitman 2016 (Modern)",
+			"tooltip": "Hitman 2016 animations for equipping and unequipping weapons/items. All 2016 animations that meet high enough standards of quality are in use. Uses physics simulation for smoother transitions when unequipping two-handed weapons.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_inventory_2016_modern"
+			]
+		},
+		{
+			"group": "Equip/Unequip",
+			"name": "Hitman 2016 (Original)",
+			"tooltip": "Hitman 2016 animations for equipping and unequipping weapons/items. All 2016 animations without serious visual issues are in use, including slightly problematic ones.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_inventory_2016_original"
+			]
+		},
+		{
+			"group": "Equip/Unequip",
+			"name": "Hitman 2",
+			"tooltip": "Hitman 2 animations for equipping and unequipping weapons/items. Uses physics simulation for smoother transitions when unequipping two-handed weapons.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_inventory_hitman2"
+			]
+		},
+		{
+			"group": "Equip/Unequip",
+			"name": "Hitman 3",
+			"tooltip": "Hitman 3 animations for equipping and unequipping weapons/items. These are the animations from the vanilla game.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_inventory_hitman3"
+			]
+		},
+		{
+			"group": "Gunfire/Recoil",
+			"name": "Hitman 2016 + Hitman 2",
+			"tooltip": "Hitman 2016 and Hitman 2 animations for firing all weapons.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_recoil_2016"
+			]
+		},
+		{
+			"group": "Gunfire/Recoil",
+			"name": "Hitman 3",
+			"tooltip": "Hitman 3 animations for firing all weapons.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_recoil_vanilla"
+			]
+		},
+		{
+			"group": "Arm Behavior",
+			"name": "Default (Recommended)",
+			"tooltip": "Uses standard arm behavior that flows smoothly, but has the vanilla Hitman 2 and 3 bug that stops the walking pistol arm pose at random.",
+			"enabledByDefault": true,
+			"type": "select",
+			"contentFolders": [
+				"content_bmsk_default"
+			]
+		},
+		{
+			"group": "Arm Behavior",
+			"name": "2016 (Experimental)",
+			"tooltip": "*CAUSES VISUAL ISSUES* Fixes the vanilla Hitman 2 and 3 bug that stops the walking pistol arm pose at random, but causes other visual bugs with weapon handling.",
+			"enabledByDefault": false,
+			"type": "select",
+			"contentFolders": [
+				"content_bmsk_2016"
+			]
+		}
+	],
+	"contentFolders": [
+		"content"
+	]
+}
